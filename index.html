@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POM TECH - Complete Interactive Application</title>
+    
+    <!-- PWA and Mobile App Meta Tags -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#007bff">
+    <link rel="apple-touch-icon" href="avatar.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="/img/img 1/PMTC.jpg" type="image/x-icon">
+  <style>
+
+</style>
+</head>
+<body>
+    <div id="welcome-overlay" class="hidden">
+        <div class="welcome-message">
+            welcome to advance diploma 2025 pomtech . Cheers!!
+        </div>
+          
+    </div>
+    <div class="container">
+        <header>
+            <div class="logo-area"><img src="/img/img 1/PMTC.jpg" alt="Logo" id="avatar-logo" style="width:80px; height:80px; border-radius:50%;"></div>
+            <div class="search-container">
+                <div class="search-bar">
+                    <input type="search" id="search-input" placeholder="Search for team members...">
+                    <button id="search-btn" class="action-btn">Search</button>
+                </div>
+                <div class="search-history" id="search-history-container"></div>
+            </div>
+            <div class="header-controls">
+                <div class="brightness-control">
+                    <label class="switch">
+                        <input type="checkbox" id="brightness-toggle">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div id="menu-icon"><span></span><span></span><span></span></div>
+            </div>
+        </header>
+        <nav>
+            <a class="nav-item active" data-target="landing-page">Home</a>
+            <a class="nav-item" data-target="about">About-Us</a>
+            <a class="nav-item" data-target="contact">Members</a>
+            <a id="logout-btn" class="nav-item">Logout</a>
+        </nav>
+        <main id="main-content">
+            <div id="landing-page" class="content-section">
+                 <div id="image-slider">
+                     <div class="landing-slide active"><img src=" img/img 1/diploma.jpeg "alt="class photo"></div>
+                     <div class="landing-slide"><img src="/img/img 1/IMG-20241105-WA0007.jpg" alt="class photo"></div>
+                     <div class="landing-slide"><img src="/img/img 1/class.jpg" alt="Solar"></div>
+                     <div class="landing-slide"><img src="/img/img 2/group B.JPG" alt="Solar"></div>
+                     <div class="landing-slide"><img src="img/img 1/IMG_4406.JPG" alt="Solar"></div>
+                     <button class="slider-control" id="prev-slide">&lt;</button>
+                     <button class="slider-control" id="next-slide">&gt;</button>
+                 </div>
+                 <div id="slider-dots"></div>
+                 
+                 <section id="landing-video-section">
+                    <h3>Featured Project Showcase</h3>
+                    <p>Discover the power and efficiency of our latest hybrid solar installation in action.</p>
+                    <div class="video-container">
+                        <iframe src="/video/ssstik.io_@capcut_huutuyen77_1753049799824.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </section>
+
+                 <div class="landing-content-grid">
+                    <div class="landing-item"><h3>Our Mission</h3><p>To innovate and implement state-of-the-art solar hybrid systems for a sustainable energy future.</p></div>
+                    <div class="landing-item calendar-container">
+                        <div id="calendar-nav" class="calendar-nav"></div>
+                        <table class="calendar">
+                            <thead>
+                                <tr><th>Su</th><th>Mo</th><th>Tu</th><th>We</th><th>Th</th><th>Fr</th><th>Sa</th></tr>
+                            </thead>
+                            <tbody id="calendar-body"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="about" class="content-section hidden">
+                <h3>About POM TECH</h3>
+                <p>We are a forward-thinking technology company dedicated to innovative and sustainable solutions. Our team consists of industry experts passionate about renewable energy and creating a greener future for generations to come.</p>
+                
+                <div class="about-section-divider">
+                    <div class="dropdown-toggle" id="location-toggle">
+                        <h3>Our Location</h3>
+                        <span class="icon-arrow down"></span>
+                    </div>
+                    <div class="dropdown-content" id="location-content">
+                        <p><b>Port Moresby Technical College</b></p>
+                        <p>Visit us at our main office located at the heart of the city's technical hub.</p>
+                        <div class="map-container">
+                             <iframe src="https://www.google.com/maps/place/Port+Moresby+Technical+College/@-9.4450402,147.1408743,2238m/data=!3m1!1e3!4m6!3m5!1s0x69023055dd65e889:0x17df5f687d49f241!8m2!3d-9.4450393!4d147.1452514!16s%2Fg%2F119t8ccwf?hl=en&entry=ttu&g_ep=EgoyMDI1MDkxNS4wIKXMDSoASAFQAw%3D%3D" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <p><strong>Address:</strong> Port Moresby Technical College, PO Box 1969, NCD Port Moresby, IDUBADA street.</p>
+                        <p><strong>Email:</strong> <a href="mailto:pomtech@gmail.com">pomtech@gmail.com</a></p>
+                        <p><strong>Phone:</strong> 675387399 | <strong> Fax:</strong> 84683937</p>
+                    </div>
+                </div>
+
+                <div class="about-section-divider">
+                    <div class="app-download-container">
+                        <h3>Download Our App</h3>
+                        <p>Get the full POM TECH experience on the go. Download our official application for exclusive content and project management tools.</p>
+                        <a href="#" download>
+                            <img src="/img/img 1/diploma.jpeg" alt="Download the POM TECH App">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="contact" class="content-section hidden">
+                <h2>Our Team</h2>
+                <p>Meet the dedicated professionals behind our success.</p>
+                <div class="group-selector" style="display:flex; justify-content:center; gap:15px; margin-bottom:30px; margin-top: 20px;">
+                    <button class="group-btn active" data-target="group-a-container">Members A</button>
+                    <button class="group-btn" data-target="group-b-container">Members B</button>
+                </div>
+                <div id="group-a-container" class="profile-container">
+                    <div class="group-info-card">
+                        <img src="/img/img 1/log.jpeg" alt="Solar Haus Logo">
+                        <h4>Solar Haus</h4>
+                        <p>po box 1849, Port Moresby NCD</p>
+                    </div>
+                    <div class="profile-grid-wrapper">
+                        <div class="profile-grid">
+                              
+                             <div class="profile-card" data-name="Mathew maima vela"><img src="/img/img 1/mat.jpg" alt="Profile of Mathew maima vela"><h3>Mathew maima Vela</h3><p class="profile-position">Company Director</p><p class="contact-info"><a href="tel:+675 7575 7050">+675 7575 7050</a></p><p class="contact-info"><a href="mailto:naturalelectricalcontrcators@gmail.com">naturalelectricalcontrcators@gmail.com</a></p></div>
+                            <div class="profile-card" data-name="Mark mas"><img src="/img/img 1/mark.jpg" alt="Profile of Mark mas"><h3>Mark mas</h3><p class="profile-position">Team Manager</p><p class="contact-info"><a href="tel:+675-70941031">+675-7094 1031</a></p><p class="contact-info"><a href="mailto:markmas915@gmail.com">markmas915@gmail.com</a></p></div>
+                            <div class="profile-card" data-name="Ais Kolip"><img src="/img/img 1/Ak.JPG" alt="Profile of Ais Kolip"><h3>Ais Kolip</h3><p class="profile-position">Project Editor</p><p class="contact-info"><a href="tel:+675-74485106">+675-74485106</a></p><p class="contact-info"><a href="mailto:kolipais44@gmail.com">kolipais44@gmail.com</a></p></div>
+                            <div class="profile-card" data-name="Livingstone waitea"><img src="/img/img 1/livings.jpg" alt="Profile of Livingstone Waitea"><h3>Livingstone Waitea</h3><p class="profile-position">Assistance Manager</p><p class="contact-info"><a href="tel:+675 77401344">+675 77401344</a></p><p class="contact-info"><a href="mailto:livingwaitea@gmail.com">livingwaitea@gmail.com</a></p></div>
+                            <div class="profile-card" data-name="vincent ted"><img src="/img/img 1/vigi.JPG" alt="Profile of vincent Ted"><h3>Vincent Ted</h3><p class="profile-position">Assistance Manager</p><p class="contact-info"><a href="tel:+675 79696285">+675 79696285</a></p><p class="contact-info"><a href="mailto:tedvincent50@gmail.com">tedvincent50@gmail.com</a></p></div>
+                            <div class="profile-card" data-name="Nathan sogo"><img src="/img/img 1/Nats.jpg" alt="Profile of Nathan Sogo"><h3>Nathan Sogo</h3><p class="profile-position">Project Coordinator</p><p class="contact-info"><a href="tel:+675 79456888">+675 79456888</a></p><p class="contact-info"><a href="mailton:nathansogo35@gmail.com">nathansogo35@gmail.com</a></p></div>
+                            <div class="profile-card" data-name="Puke luke"><img src="/img/img 1/puke.JPG" alt="Profile of Puke luke"><h3>Puke Luke</h3><p class="profile-position">Project coordinator</p><p class="contact-info"><a href="tel:+675 73912855">+675 73912855</a></p><p class="contact-info"><a href="mailto:lukepuke@gmail.com">lukepuke@gmail.com</a></p></div>
+                            <div class="profile-card" data-name="Daniel Yuk"><img src="/img/img 1/dan.jpg" alt="Profile of Daniel Yuk"><h3>Daniel Ndrasal</h3><p class="profile-position"> Electrical Technicians</p><p class="contact-info"><a href="tel:+675 77221696">+675 77221696</a></p><p class="contact-info"><a href="mailto:danielndrasal945@gmail.com">danielndrasal945@gmail.com</a></p></div>
+                            <div class="profile-card" data-name="Garry sivinah"><img src="/img/img 1/Garry.jpg" alt="Profile of Garry sivina"><h3>Garry sivina</h3><p class="profile-position">Electrical Technicians</p><p class="contact-info"><a href="tel:+675 7733 1177">+675 7733 1177</a></p><p class="contact-info"><a href="mailto:garrysivina@gmail.com">garrysivina@gmail.com</a></p></div>
+                            <div class="profile-card" data-name="Christabel Yaku"><img src="/img/img 1/bela (1).jpg" alt="Profile of Christabelle Yaku"><h3>Christabelle Yaku</h3><p class="profile-position">Electrical Engineer</p><p class="contact-info"><a href="tel:+675 72871297">+675 72871297</a></p><p class="contact-info"><a href="mailto:yakuchristabelle@gmail.com">yakuchristabelle@gmail.com</a></p></div>
+                            <div class="profile-card" data-name="Justin kama"><img src="/img/img 1/kama.JPG" alt="Profile of Justin kama"><h3>Justin kama</h3><p class="profile-position">Electrical Engineer</p><p class="contact-info"><a href="tel:+675 72415585">+675 72415585</a></p><p class="contact-info"><a href="mailto:kamajustin84@gmai.com">kamajustin84@gmail.com</a></p></div>
+                            <div class="profile-card" data-name="Philip Bidalph"><img src="/img/img 1/philip.jpg" alt="Profile of Philip Bidilph"><h3>Philip Bidilph</h3><p class="profile-position">System Analysis</p><p class="contact-info"><a href="tel:+675 73946931">+675 73946931</a></p><p class="contact-info"><a href="mailto:bidolphphilip373@gmail.com">bidolphphilip373@gmail.com</a></p></div>
+                            <div class="profile-card" data-name="Jessy Sam Kara"><img src="/img/img 1/sam.jpg" alt="Profile of Jessy sam Kara"><h3>Jessy Sam Kara</h3><p class="profile-position">System Analysis</p><p class="contact-info"><a href="tel:+675 72098708">+675 72098708</a></p><p class="contact-info"><a href="mailto:jessysamkara37@gmail.com">jessysamkara37@gmail.com</a></p></div>
+                            <div class="profile-card" data-name="Hepale Samson"><img src="/img/img 1/Samson.jpg" alt="Profile of Hepale Samson"><h3>Hepale Samson</h3><p class="profile-position">Consultant</p><p class="contact-info"><a href="tel:+675 79982722">+675 79982722</a></p><p class="contact-info"><a href="mailto:samsonhepale@gmai.com">samsonhepale@gmai.com</a></p></div>
+                            <div class="profile-card" data-name="Allan Lobson"><img src="/img/img 1/allan.jpg" alt="Profile of Allan Lopson"><h3>Allan Lobson</h3><p class="profile-position">Consultant</p><p class="contact-info"><a href="tel:+675 70357152">+675 70357152</a></p><p class="contact-info"><a href="mailto:allenlobson502@gmail.com">allenlobson502@gmail.com</a></p></div>
+                            <div class="profile-card" data-name="Steven Wani"><img src="/img/img 1/steven.jpg" alt="Profile of Steven Wani"><h3>Steven Wani</h3><p class="profile-position">Editor</p><p class="contact-info"><a href="tel:+675 72755759">+675 72755759</a></p><p class="contact-info"><a href="mailto:timzmhan@gmail.com">timzmhan@gmail.com</a></p></div>
+                        </div>
+                        <div class="toggle-view-container">
+                            <button class="toggle-view-btn" data-target-grid="group-a-container">
+                                <span>View More</span>
+                                <span class="icon-arrow down"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div id="group-b-container" class="profile-container hidden">
+                     <div class="group-info-card">
+                        <img src="/img/img 2/logo B.jpg" alt="Fossil Fuel Logo">
+                        <h4>Ugan Electrical& ICT Services</h4>
+                        <p>Address|:Private mail-Kiunga Western Province</p>
+                    </div> 
+                    <div class="profile-grid-wrapper">
+                        <div class="profile-grid">
+                              <div class="profile-card" data-name="zazoring Noie"><img src="/img/img 2/zazoring.JPG" alt="Profile of zazoring Noie"><h3>Noie Zazoring</h3><p class="profile-position">Managing Director</p><p class="contact-info"><a href="tel:+675 75771896">+675 7577 1896</a></p><p class="contact-info"><a href="mailto:noiezazoring97@gmail.com">noiezazoring97@gmail.com</a></p></div>
+                            <div class="profile-card" data-name="Nimrod Kulake"><img src="/img/img 2/nemrod.JPG" alt="Profile of Nimrod Kulake"><h3>Nimrod Kulae</h3><p class="profile-position">Team Leader</p><p class="contact-info"><a href="tel:+675 79960625">+675 7996 0625</a></p><p class="contact-info"><a href="mailto:kulakenimrod@gmail.com">kulakenimrod@gmail.com</a></p></div>
+                            <div class="profile-card" data-name="Tule Mcray"><img src="/img/img 2/mcray.JPG" alt="Profile of Tule Mercury"><h3>Mcray Tule</h3><p class="profile-position">Assistance Manager</p><p class="contact-info"><a href="tel:+675 73549829">+675 7354 9829</a></p><p class="contact-info"><a href="mailto:tulemcray69@gmail.com">tulemcray69@gmail.com</a></p></div>
+                            <div class="profile-card" data-name="Russel Hausing"><img src="/img/img 2/russel.JPG" alt="Profile of Hausing Russel"><h3>Russel Hausing</h3><p class="profile-position">Assistance Manager</p><p class="contact-info"><a href="tel:+675 72266043">+675 7226 6043</a></p><p class="contact-info"><a href="mailto:hanzhausengrussel010@gmail.com">hanzhausengrussel010@gmail.com</a></p></div>
+                            <div class="profile-card" data-name="Dorcas Gila"><img src="/img/img 2/dorcas.JPG" alt="Profile of Dorcas Gila"><h3>Dorcas Gila</h3><p class="profile-position">Project Coordinator</p><p class="contact-info"><a href="tel:+675 7133 9395">+675 7133 9395</a></p><p class="contact-info"><a href="mailto:dorcasgilla@gmail.com">dorcasgilla@gmail.com</a></p></div>
+                            <div class="profile-card" data-name="Jacob James Borange"><img src="/img/img 2/james.JPG" alt="Profile of Jacob James Borange"><h3>Jacob Borange James</h3><p class="profile-position">Editor</p><p class="contact-info"><a href="tel:+675 7448 269">+675 7448 269</a></p><p class="contact-info"><a href="mailto:jacobjamesborange04@gmail.com">jacobjamesborange04@gmail.com</a></p></div>
+                            <div class="profile-card" data-name="Timothy Langu"><img src="/img/img 2/timo.JPG" alt="Profile of Timothy Langu"><h3>Timothy Langu</h3><p class="profile-position">Editor</p><p class="contact-info"><a href="tel:+675 79493868">+675 79493868</a></p><p class="contact-info"><a href="mailto:timpthylangu88@gmail.com">timpthylangu88@gmail.com</a></p></div>
+                            <div class="profile-card" data-name="Timon Igila"><img src="/img/img 2/timothy hiri.JPG" alt="Profile of Timon Igila"><h3>Timon Igila</h3><p class="profile-position">Survisor</p><p class="contact-info"><a href="tel:+675 7177 7360">+675 7177 7360</a></p><p class="contact-info"><a href="mailto:timonigila64@gamil.com">timonigila64@gamil.com</a></p></div>
+                            <div class="profile-card" data-name="shane Koiya"><img src="/img/img 2/shane.JPG" alt="Profile of shane Koiya"><h3>shane Koiya</h3><p class="profile-position">Survisor</p><p class="contact-info"><a href="tel:+675 7401 0960">+675 7401 0960</a></p><p class="contact-info"><a href="mailto:shankoiya@gmail.com">shankoiya@gmail.com</a></p></div>
+                            <div class="profile-card" data-name="Ezekiel Kamau"><img src="/img/img 2/ezik.JPG" alt="Profile of Ezekiel Kamau"><h3>Ezekiel Kamau</h3><p class="profile-position">Project Manager</p><p class="contact-info"><a href="tel:+675 7735 3099">+675 7735 3099</a></p><p class="contact-info"><a href="mailto:ezekielkumugunkamau@gmail.com">ezekielkumugunkamau@gmail.com</a></p></div>
+                            <div class="profile-card" data-name="Lucas Andy"><img src="/img/img 2/lucas.jpg" alt="Profile of Lucas Andy"><h3>Lucas Andy</h3><p class="profile-position">Project Manager</p><p class="contact-info"><a href="tel:+675 73784754">+675 7378 4754</a></p><p class="contact-info"><a href="mailto:lucasandy@3051gmail.com">lucasandy@3051gmail.com</a></p></div>
+                            <div class="profile-card" data-name="Leslie Wasape Pombo"><img src="/img/img 2/lesley.JPG" alt="Profile of Leslie Wasape Pombo"><h3>Leslie Wasape Pombo</h3><p class="profile-position">System Analysis</p><p class="contact-info"><a href="tel:+1-555-202-0013"></a></p><p class="contact-info"><a href="mailto:lesliepombo7@gmail.com">lesliepombo7@gmail.com</a></p></div>
+                            <div class="profile-card" data-name="meshach Repi"><img src="/img/img 2/mesak.JPG" alt="Profile of meshach Repi"><h3>Meshach Repi</h3><p class="profile-position">System Analysis</p><p class="contact-info"><a href="tel:+675 7051 8821">+675 7051 8821</a></p><p class="contact-info"><a href="mailto:meshachrepi001@gmail.com">meshachrepi001@gmail.com</a></p></div>
+                            <div class="profile-card" data-name="Aiken Musum"><img src="/img/img 2/ican.JPG" alt="Profile of Aiken Musum"><h3>Aiken Musum</h3><p class="profile-position">Electricla Engineer</p><p class="contact-info"><a href="tel:+675 7943 4899">+675 7943 4899</a></p><p class="contact-info"><a href="mailto:aikenmusum24@gmail.com">aikenmusum24@gmail.com</a></p></div>
+                            <div class="profile-card" data-name="Robert Wii"><img src="/img/img 2/robert.JPG" alt="Profile of Robert Wii"><h3>Robert Wii</h3><p class="profile-position">Electricla Engineer</p><p class="contact-info"><a href="tel:+675 71098417">+675 71098417</a></p><p class="contact-info"><a href="mailto:wiirobert886@gmail.com">wiirobert886@gmail.com</a></p></div>
+                             <div class="profile-card" data-name="Elizah Iri"><img src="/img/img 2/elizah.jpg" alt="Profile of Elizah Iri"><h3>Elizah Iri</h3><p class="profile-position">electrician</p><p class="contact-info"><a href="tel:+675 78991644">+675 78991644</a></p><p class="contact-info"><a href="mailto:irielizah898@gmail.com">irielizah898@gmail.com</a></p></div>
+                        </div>
+                        <div class="toggle-view-container">
+                            <button class="toggle-view-btn" data-target-grid="group-b-container">
+                                <span>View More</span>
+                                <span class="icon-arrow down"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Search Results Section -->
+            <div id="search-results" class="content-section hidden">
+                <h2>Search Results</h2>
+                <div id="search-results-grid" class="profile-grid"></div>
+                <p id="no-results-message" class="hidden">No members found matching your search.</p>
+            </div>
+        </main>
+        <!-- News Section -->
+            <div id="news" class="content-section hidden">
+                <h2>News & Updates</h2>
+                <p>Stay informed with the latest advancements and news in Papua New Guinea, powered by Gemini.</p>
+                <button id="fetch-news-btn" class="action-btn">Get Latest PNG News</button>
+                <div id="news-container" class="news-container">
+                    <p>Click the button to fetch the latest news...</p>
+                </div>
+                <p class="media-disclaimer">
+                    <strong>Note:</strong> Images and videos are not directly provided. Please refer to the source links for the full articles and associated media.
+                </p>
+            </div>
+        <footer style="text-align:center; margin-top:40px; padding:20px; border-top:1px solid var(--border-color); font-size:0.9em; color:#666;">
+            <p>© 2025 POMTECH ADV. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Sliding Panel (Main Menu) -->
+    <div id="menu-panel-container" class="sliding-panel-container">
+        <div class="sliding-panel-overlay"></div>
+        <div id="main-menu-panel" class="sliding-panel">
+            <div class="panel-header"><h3>Resources</h3><button class="close-panel-btn">&times;</button></div>
+            <div class="panel-content">
+                <div class="resource-item" data-template-id="pdf-template"><div class="icon">📄</div><div><h4>PDF Documents</h4><p>Access technical specs and proposals.</p></div></div>
+                <div class="resource-item" data-template-id="video-template"><div class="icon">🎬</div><div><h4>Video Library</h4><p>Watch tutorials and project showcases.</p></div></div>
+                <div class="resource-item" data-template-id="image-template"><div class="icon">🖼️</div><div><h4>Image Gallery</h4><p>Browse photos from our latest installations.</p></div></div>
+                <div class="resource-item" data-template-id="templates-template"><div class="icon">💡</div><div><h4>Our Templates</h4><p>Browse our project templates and designs.</p></div></div>
+                <div class="resource-item" data-template-id="image-to-video-template"><div class="icon">🖼️🎥</div><div><h4>Image to Video</h4><p>Bring your images to life with AI.</p></div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Full-Screen Resource Viewer -->
+    <div id="resource-viewer" class="">
+        <button id="close-resource-viewer-btn">&times;</button>
+        <div id="resource-viewer-content"></div>
+    </div>
+    
+    <!-- Fullscreen Image Viewer -->
+    <div id="fullscreen-viewer" class="fullscreen-viewer">
+        <div class="fullscreen-viewer-content">
+            <button class="close-viewer-btn">&times;</button>
+            <button class="viewer-nav viewer-prev">&lt;</button>
+            <div id="fullscreen-content-host"></div>
+            <button class="viewer-nav viewer-next">&gt;</button>
+        </div>
+    </div>
+    
+ <!-- AI Chatbot -->
+    <button id="chatbot-fab" aria-label="Open AI Assistant">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 11H7V9h2v2zm4 0h-2V9h2v2zm4 0h-2V9h2v2z"/></svg>
+    </button>
+    <div id="chatbot-window" role="dialog" aria-modal="true" aria-labelledby="chatbot-title">
+        <div class="chatbot-header">
+            <h4 id="chatbot-title">AI Assistant</h4>
+            <button id="close-chatbot-btn" aria-label="Close Chat">&times;</button>
+        </div>
+        <div id="chatbot-messages">
+             <div class="chat-message ai">Hello! How can I help you with POM TECH today?</div>
+        </div>
+        <form id="chatbot-input-form">
+            <input id="chatbot-input" type="text" placeholder="Ask a question..." autocomplete="off">
+            <button id="chatbot-send-btn" type="submit" aria-label="Send Message">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+            </button>
+        </form>
+    </div>
+
+<!--Img to video-->
+      <template id="image-to-video-template">
+        <h3>Image to Video Generator</h3>
+        <p>Upload an image and provide a prompt to bring it to life as a short video.</p>
+        <div class="image-to-video-container">
+            <div class="image-upload-area">
+                <input type="file" id="image-to-video-input-file" accept="image/png, image/jpeg, image/webp" class="hidden">
+                <label for="image-to-video-input-file" class="image-upload-label">
+                    <img id="image-to-video-preview" src="#" alt="Image Preview" class="hidden">
+                    <span id="image-upload-placeholder">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                        <span>Click to upload an image</span>
+                    </span>
+                </label>
+            </div>
+            <div class="image-to-video-form-item">
+                <label for="image-to-video-prompt">Video Prompt:</label>
+                <textarea id="image-to-video-prompt" rows="3" placeholder="e.g., make the cat drive at top speed in a neon hologram style."></textarea>
+            </div>
+            <button id="image-to-video-generate-btn" class="action-btn">Generate Video</button>
+            <div id="image-to-video-status" class="image-to-video-status"></div>
+            <div id="image-to-video-result" class="image-to-video-result"></div>
+        </div>
+    </template>
+    
+    <!-- Notification System Elements -->
+    <div id="notification-container"></div>
+    <audio id="notification-sound" src="https://cdn.freesound.org/previews/219/219244_4032688-lq.mp3" preload="auto"></audio>
+
+
+
+     <!-- Event Modal -->
+      <div id="event-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <h4 id="modal-title">Add Event</h4>
+            <input type="text" id="event-input" placeholder="Event details...">
+            <div class="modal-form-row">
+                <label for="event-time-input">Time:</label>
+                <input type="time" id="event-time-input">
+            </div>
+            <div class="modal-form-row">
+                <label for="event-reminder-input">Reminder:</label>
+                <select id="event-reminder-input">
+                    <option value="none">No reminder</option>
+                    <option value="5">5 minutes before</option>
+                    <option value="15">15 minutes before</option>
+                    <option value="30">30 minutes before</option>
+                    <option value="60">1 hour before</option>
+                </select>
+            </div>
+            <div class="modal-actions">
+                <button id="cancel-event-btn" class="action-btn" style="background-color: #6c757d;">Cancel</button>
+                <button id="save-event-btn" class="action-btn">Save</button>
+            </div>
+        </div>
+    </div>
+
+  <!-- Resource Content Templates -->
+    <template id="pdf-template">
+        <h3>PDF Documents</h3>
+        <p>Review our detailed technical documents and project proposals for in-depth information. Click on the icon to Download it.</p>
+        <div id="pdf-viewer-container">
+            <div class="pdf-container">
+                <div class="pdf-header">
+                    <h5>Solar Hybrid System Proposal</h5>
+                    <a href="/20200709_MA_BP_Hybrid_solar_system.pdf" download="Solar_Hybrid_System_Proposal.pdf" class="download-pdf-btn" title="Download PDF">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    </a>
+                </div>
+                <div class="pdf-content-host">
+                    <div class="pdf-placeholder" data-src="solar_hybrid_proposal.pdf" data-title="Solar Hybrid System Proposal">
+                        <svg class="pdf-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M13.5,15.5V19H10.5V15.5H8.5L12,12L15.5,15.5H13.5M13,9V3.5L18.5,9H13Z" /></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="pdf-container">
+                <div class="pdf-header">
+                    <h5>Technical Specifications Sheet</h5>
+                    <a href="/2016_CEDRO Solar Photovoltaic (PV) Hybrid Power Plants.pdf" download="Technical_Specifications_Sheet.pdf" class="download-pdf-btn" title="Download PDF">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    </a>
+                </div>
+                <div class="pdf-content-host">
+                     <div class="pdf-placeholder" data-src="solar_hybrid_proposal.pdf" data-title="Technical Specifications Sheet">
+                        <svg class="pdf-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M13.5,15.5V19H10.5V15.5H8.5L12,12L15.5,15.5H13.5M13,9V3.5L18.5,9H13Z" /></svg>
+                        <span>Click the download Icon to Download</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <!--IMG GALLARY-->
+        <div id="image-data-source-a">
+            <div data-src="img/img 1/FB_IMG_1776912344172.jpg" data-title="Project Presentiation"></div><div data-src="img/img 1/FB_IMG_1776912391444.jpg" data-title="Special Gusts"></div><div data-src="img/img 1/FB_IMG_1763498430544.jpg" data-title="Project Presentiation"></div><div data-src="img/img 1/mark.jpg" data-title="Mr Mark Mas"></div><div data-src="img/img 1/Ak.JPG"data-title="Mr Ais Kolip"></div><div data-src="img/img 1/mat.jpg" data-title=" Mr Mathew Maima"></div><div data-src="img/img 1/vigi.JPG" data-title="Mr Vincent Ted"></div><div data-src="img/img 1/livings.jpg" data-title=" Mr Livingstone Waitea"></div><div data-src="img/img 1/philip.jpg" data-title="Mr Philip Bidolph (big Sis)"></div><div data-src="img/img 1/steven.jpg" data-title="Mr Steven Wani"></div><div data-src="img/img 1/Nats.jpg" data-title="MR Nathan Sogo"></div><div data-src="img/img 1/Samson.jpg" data-title="MR Samson Hepale"></div><div data-src="img/img 1/kama.JPG" data-title="Mr Justin Kama (son of ponda)"></div><div data-src="img/img 1/puke.JPG" data-title="Mr Puke Luke (Awa man)"></div><div data-src="img/img 1/Garry.jpg" data-title="MR Garry sivinah"></div><div data-src="img/img 1/dan.jpg" data-title="Mr Daniel Nandersal"></div><div data-src="img/img 1/bela (1).jpg" data-title="Miss Christabel Yaku"></div><div data-src="img/img 1/allan.jpg" data-title="MR Allan Lobson (marape)"></div><div data-src="img/img 1/sam.jpg" data-title="MR Jessy Sam Kara"></div>
+            
+         <div id="image-data-source-b">
+            <div data-src="img/img 2/press.jpg" data-title="Prototype presentiation"></div><div data-src="img/img 2/group B.JPG" data-title="Group B Photo 2025 Advance diploma "></div><div data-src="img/img 2/FB_IMG_1776912371508.jpg" data-title="Team B Project #3"></div><div data-src="https://source.unsplash.com/400x400/?solar,panel,future&sig=103" data-title="Team B Project #4"></div><div data-src="https://source.unsplash.com/400x400/?solar,panel,future&sig=104" data-title="Team B Project #5"></div><div data-src="https://source.unsplash.com/400x400/?solar,panel,future&sig=105" data-title="Team B Project #6"></div><div data-src="https://source.unsplash.com/400x400/?solar,panel,future&sig=106" data-title="Team B Project #7"></div><div data-src="https://source.unsplash.com/400x400/?solar,panel,future&sig=107" data-title="Team B Project #8"></div><div data-src="https://source.unsplash.com/400x400/?solar,panel,future&sig=108" data-title="Team B Project #9"></div><div data-src="https://source.unsplash.com/400x400/?solar,panel,future&sig=109" data-title="Team B Project #10"></div><div data-src="https://source.unsplash.com/400x400/?solar,panel,future&sig=110" data-title="Team B Project #11"></div><div data-src="https://source.unsplash.com/400x400/?solar,panel,future&sig=111" data-title="Team B Project #12"></div><div data-src="https://source.unsplash.com/400x400/?solar,panel,future&sig=112" data-title="Team B Project #13"></div><div data-src="https://source.unsplash.com/400x400/?solar,panel,future&sig=113" data-title="Team B Project #14"></div><div data-src="https://source.unsplash.com/400x400/?solar,panel,future&sig=114" data-title="Team B Project #15"></div><div data-src="https://source.unsplash.com/400x400/?solar,panel,future&sig=115" data-title="Team B Project #16"></div><div data-src="https://source.unsplash.com/400x400/?solar,panel,future&sig=116" data-title="Team B Project #17"></div><div data-src="https://source.unsplash.com/400x400/?solar,panel,future&sig=117" data-title="Team B Project #18"></div><div data-src="https://source.unsplash.com/400x400/?solar,panel,future&sig=118" data-title="Team B Project #19"></div><div data-src="https://source.unsplash.com/400x400/?solar,panel,future&sig=119" data-title="Team B Project #20"></div><div data-src="https://source.unsplash.com/400x400/?solar,panel,future&sig=120" data-title="Team B Project #21"></div><div data-src="https://source.unsplash.com/400x400/?solar,panel,future&sig=121" data-title="Team B Project #22"></div><div data-src="https://source.unsplash.com/400x400/?solar,panel,future&sig=122" data-title="Team B Project #23"></div>
+        </div>
+        <div id="image-data-source-templates">
+            <div data-src="https://source.unsplash.com/400x400/?solar,blueprint,design&sig=200" data-title="Template Design #1"></div><div data-src="https://source.unsplash.com/400x400/?solar,blueprint,design&sig=201" data-title="Template Design #2"></div><div data-src="https://source.unsplash.com/400x400/?solar,blueprint,design&sig=202" data-title="Template Design #3"></div><div data-src="https://source.unsplash.com/400x400/?solar,blueprint,design&sig=203" data-title="Template Design #4"></div><div data-src="https://source.unsplash.com/400x400/?solar,blueprint,design&sig=204" data-title="Template Design #5"></div><div data-src="https://source.unsplash.com/400x400/?solar,blueprint,design&sig=205" data-title="Template Design #6"></div><div data-src="https://source.unsplash.com/400x400/?solar,blueprint,design&sig=206" data-title="Template Design #7"></div><div data-src="https://source.unsplash.com/400x400/?solar,blueprint,design&sig=207" data-title="Template Design #8"></div><div data-src="https://source.unsplash.com/400x400/?solar,blueprint,design&sig=208" data-title="Template Design #9"></div><div data-src="https://source.unsplash.com/400x400/?solar,blueprint,design&sig=209" data-title="Template Design #10"></div><div data-src="https://source.unsplash.com/400x400/?solar,blueprint,design&sig=210" data-title="Template Design #11"></div><div data-src="https://source.unsplash.com/400x400/?solar,blueprint,design&sig=211" data-title="Template Design #12"></div><div data-src="https://source.unsplash.com/400x400/?solar,blueprint,design&sig=212" data-title="Template Design #13"></div><div data-src="https://source.unsplash.com/400x400/?solar,blueprint,design&sig=213" data-title="Template Design #14"></div><div data-src="https://source.unsplash.com/400x400/?solar,blueprint,design&sig=214" data-title="Template Design #15"></div><div data-src="https://source.unsplash.com/400x400/?solar,blueprint,design&sig=215" data-title="Template Design #16"></div><div data-src="https://source.unsplash.com/400x400/?solar,blueprint,design&sig=216" data-title="Template Design #17"></div><div data-src="https://source.unsplash.com/400x400/?solar,blueprint,design&sig=217" data-title="Template Design #18"></div><div data-src="https://source.unsplash.com/400x400/?solar,blueprint,design&sig=218" data-title="Template Design #19"></div><div data-src="https://source.unsplash.com/400x400/?solar,blueprint,design&sig=219" data-title="Template Design #20"></div>
+        </div>
+    </div>
+    
+    <!-- Resource Content Templates -->
+    <template id="pdf-template">
+        <h3>PDF Documents</h3>
+        <p>Review our detailed technical documents and project proposals for in-depth information.</p>
+        <div id="pdf-container-template">
+            <div class="pdf-container">
+                <h5>Solar Hybrid System Proposal</h5>
+                <div class="pdf-cover" data-pdf-src="solar_hybrid_proposal.pdf">
+                     <img src="https://i.imgur.com/7aE3i81.png" alt="PDF Cover">
+                </div>
+                <a href="solar_hybrid_proposal.pdf" download="Solar_Hybrid_Proposal.pdf" class="action-btn pdf-download-btn hidden" style="margin-top:10px;">Download PDF</a>
+            </div>
+            <div class="pdf-container">
+                <h5>Technical Specifications Sheet</h5>
+                 <div class="pdf-cover" data-pdf-src="solar_hybrid_proposal.pdf">
+                     <img src="https://i.imgur.com/7aE3i81.png" alt="PDF Cover">
+                </div>
+                <a href="solar_hybrid_proposal.pdf" download="Technical_Specifications.pdf" class="action-btn pdf-download-btn hidden" style="margin-top:10px;">Download PDF</a>
+            </div>
+        </div>
+    </template>
+   
+    
+   <!--video-->
+   <template id="video-template">
+  <h3>Video Library</h3>
+  <p>Tap a video to play, or use the button to download in HD.</p>
+  <div id="video-list-container">
+
+    <!-- Video 1 -->
+    <div class="video-item">
+      <div class="video-item-header">Solar Power System Overview</div>
+      <div class="video-player-wrapper">
+        <img class="video-thumbnail" src="/img/img 1/class.jpg" data-video="/video/j.mp4" alt="Solar Power System Overview">
+        <div class="play-icon"></div>
+      </div>
+      <div style="text-align:center;">
+        <a href="/video/j.mp4" class="action-btn download-video-btn" download>Download HD</a>
+      </div>
+    </div>
+
+    <!-- Video 2 -->
+    <div class="video-item">
+      <div class="video-item-header">DIY Solar Panel Installation</div>
+      <div class="video-player-wrapper">
+        <img class="video-thumbnail" src="/img/img 1/class 1.jpg" data-video="/video/dcd.mp4" alt="DIY Solar Panel Installation">
+        <div class="play-icon"></div>
+      </div>
+      <div style="text-align:center;">
+        <a href="/video/Generated File July 21, 2025 - 5_49AM.mp4" class="action-btn download-video-btn" download>Download HD</a>
+      </div>
+    </div>
+
+    <!-- Video 3 -->
+    <div class="video-item">
+      <div class="video-item-header">Understanding Solar Inverters</div>
+      <div class="video-player-wrapper">
+        <img class="video-thumbnail" src="/img/img 2/group B.JPG" data-video="/video/dffw.mp4" alt="Understanding Solar Inverters">
+        <div class="play-icon"></div>
+      </div>
+      <div style="text-align:center;">
+        <a href="/video/Generated File July 21, 2025 - 5_49AM.mp4" class="action-btn download-video-btn" download>Download HD</a>
+      </div>
+    </div>
+
+    <!-- Video 4 -->
+    <div class="video-item">
+      <div class="video-item-header">The Future of Renewable Energy</div>
+      <div class="video-player-wrapper">
+        <img class="video-thumbnail" src="/img/img 1/diploma.jpeg" data-video="/video/hth.mp4" alt="The Future of Renewable Energy">
+        <div class="play-icon"></div>
+      </div>
+      <div style="text-align:center;">
+        <a href="/video/ssstik.io_@capcut_huutuyen77_1753049799824.mp4" class="action-btn download-video-btn" download>Download HD</a>
+      </div>
+    </div>
+
+    <!-- Video 5 -->
+    <div class="video-item">
+      <div class="video-item-header">Hybrid Solar Systems Explained</div>
+      <div class="video-player-wrapper">
+        <img class="video-thumbnail" src="/img/img 1/IMG-20241105-WA0007.jpg" data-video="/video/fefe.mp4" alt="Hybrid Solar Systems Explained">
+        <div class="play-icon"></div>
+      </div>
+      <div style="text-align:center;">
+        <a href="/video/Generated File July 21, 2025 - 5_55AM.mp4" class="action-btn download-video-btn" download>Download HD</a>
+      </div>
+
+        <div class="social-links-container">
+            <p>Follow us on social media</p>
+            <a href="#" target="_blank" title="YouTube">
+                <svg viewBox="0 0 24 24"><path d="M21.582,6.186c-0.23-0.854-0.906-1.531-1.76-1.76C18.25,4,12,4,12,4S5.75,4,4.178,4.426 c-0.854,0.23-1.531,0.906-1.76,1.76C2,7.758,2,12,2,12s0,4.242,0.418,5.814c0.23,0.854,0.906,1.531,1.76,1.76 C5.75,20,12,20,12,20s6.25,0,7.822-0.426c0.854-0.23,1.531-0.906,1.76-1.76C22,16.242,22,12,22,12S22,7.758,21.582,6.186z M10,15.464V8.536L16,12L10,15.464z"/></svg>
+            </a>
+            <a href="#" target="_blank" title="Facebook">
+                <svg viewBox="0 0 24 24"><path d="M22,12c0-5.523-4.477-10-10-10S2,6.477,2,12c0,4.99,3.657,9.128,8.438,9.878V14.89h-2.54V12h2.54V9.797 c0-2.506,1.492-3.89,3.777-3.89c1.094,0,2.238,0.195,2.238,0.195v2.46h-1.26c-1.24,0-1.628,0.772-1.628,1.562V12h2.773l-0.443,2.89 h-2.33V21.878C18.343,21.128,22,16.99,22,12z"/></svg>
+            </a>
+            <a href="#" target="_blank" title="TikTok">
+                <svg viewBox="0 0 24 24"><path d="M12.525,2.007c1.31-.02,2.61-.01,3.91-.02,0.52,0,1.01,0.22,1.38,0.6,0.37,0.38,0.58,0.87,0.58,1.38,0,2.6,0,5.2,0,7.8,0,0.18-0.03,0.35-0.08,0.52-0.04,0.13-0.09,0.26-0.15,0.38-0.13,0.24-0.31,0.46-0.53,0.63-0.22,0.17-0.48,0.29-0.76,0.35-0.32,0.06-0.65,0.08-0.98,0.08-2.6,0-5.2,0-7.8,0-0.52,0-1.01-0.22-1.38-0.6-0.37-0.38-0.58-0.87-0.58-1.38,0-2.6,0-5.2,0-7.8,0-0.52,0.22-1.01,0.6-1.38,0.38-0.37,0.87-0.58,1.38-0.58,1.3,0,2.6,0,3.9,0.01Zm0.01,2.62c-0.42,0-0.81,0.1-1.15,0.29-0.34,0.19-0.62,0.47-0.81,0.81-0.19,0.34-0.29,0.73-0.29,1.15,0,0.42,0.1,0.81,0.29,1.15,0.19,0.34,0.47,0.62,0.81,0.81,0.34,0.19,0.73,0.29,1.15,0.29,0.42,0,0.81-0.1,1.15-0.29,0.34-0.19,0.62-0.47,0.81-0.81,0.19-0.34,0.29-0.73,0.29-1.15,0-0.42-0.1-0.81-0.29-1.15-0.19-0.34-0.47-0.62-0.81-0.81-0.34-0.19-0.73-0.29-1.15-0.29Z"/></svg>
+            </a>
+        </div>
+</template>
+
+    <template id="image-template">
+        <h3>Image Gallery</h3>
+        <div class="group-selector" style="display:flex; justify-content:center; gap:15px; margin-bottom:10px;">
+            <button class="group-btn active" data-target="team-a-gallery-container-template">Team A</button>
+            <button class="group-btn" data-target="team-b-gallery-container-template">Team B</button>
+        </div>
+        <div style="text-align: center; margin-bottom: 20px;">
+            <h4 style="margin:0;">Our Project Showcase</h4>
+            <p style="margin:5px 0 0 0; font-size: 0.9em;">Explore the innovative work completed by our dedicated teams.</p>
+        </div>
+        <div id="team-a-gallery-container-template" class="gallery-team-container">
+             <h5>Team A: Residential Solutions</h5>
+             <p style="font-size: 0.9em;">Showcasing our efficient and reliable solar installations for homes and small businesses.</p>
+             <div id="team-a-slider-template" class="panel-slider"></div>
+             <div id="team-a-dots-template" class="panel-slider-dots"></div>
+             <div id="team-a-grid-template" class="image-gallery-grid"></div>
+             <div class="gallery-controls">
+                 <button id="view-more-images-a-template" class="action-btn">View More</button>
+                 <button id="view-less-images-a-template" class="action-btn hidden">View Less</button>
+             </div>
+        </div>
+        <div id="team-b-gallery-container-template" class="gallery-team-container hidden">
+             <h5>Team B: Advanced Solar Implementations</h5>
+             <p style="font-size: 0.9em;">A collection of our most technologically advanced solar grid projects for industrial use.</p>
+             <div id="team-b-slider-template" class="panel-slider"></div>
+             <div id="team-b-dots-template" class="panel-slider-dots"></div>
+             <div id="team-b-grid-template" class="image-gallery-grid"></div>
+             <div class="gallery-controls">
+                 <button id="view-more-images-b-template" class="action-btn">View More</button>
+                 <button id="view-less-images-b-template" class="action-btn hidden">View Less</button>
+             </div>
+        </div>
+    </template>
+    
+<template id="templates-template">
+    <h3>Project Design Templates</h3>
+    <p>Explore a variety of pre-designed templates for different project or template.</p>
+    
+<br><br>
+    <div class="link-copy-container">
+        <div class="icon">🔗</div>
+        <h5>Share Our Website</h5>
+        <p>Easily share a link to our website with colleagues and clients.</p>
+        <div class="link-copy-box" id="link-copy-box-template">
+           Click to copy the website link
+        </div>
+    
+         <div class="mini-profile-card-container">
+             <div class="mini-profile-card">
+                 <img src="/img/img 1/Ak.JPG" alt="Ais Kolip">
+                 <div>
+                     <strong>MR 501A</strong>
+                     <p>Web Developer</p>
+                 </div>
+             </div>
+        </div>
+    </template>
+            
+    <script type="module" src="index.js"></script>
+    <script type="module" src="server.js"></script>
+</body>
+</html>    
